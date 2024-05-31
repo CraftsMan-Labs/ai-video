@@ -587,4 +587,4 @@ with gr.Blocks(theme=theme, title="OpenGPT 4o DEMO") as demo:
     gr.TabbedInterface([chat, voice, livechat, image, video], ['💬 SuperChat','🗣️ Voice Chat','📸 Live Chat', '🖼️ Image Engine', '🎥 Video Engine'])
 
 demo.queue(max_size=300)
-demo.launch()
+demo.launch(share=True)
