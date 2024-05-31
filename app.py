@@ -36,7 +36,7 @@ from transformers import AutoProcessor
 model3 = AutoModel.from_pretrained("unum-cloud/uform-gen2-dpo", trust_remote_code=True)
 processor = AutoProcessor.from_pretrained("unum-cloud/uform-gen2-dpo", trust_remote_code=True)
 
-@spaces.GPU(queue=False)
+# @spaces.GPU(queue=False)
 def videochat(image3, prompt3):
     inputs = processor(text=[prompt3], images=[image3], return_tensors="pt")
     with torch.inference_mode():
