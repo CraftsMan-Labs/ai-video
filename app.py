@@ -10,7 +10,7 @@ subprocess.run(
 )
 
 import copy
-import spaces
+# import spaces
 import time
 import torch
 
@@ -333,7 +333,7 @@ def extract_images_from_msg_list(msg_list):
     return all_images
 
 
-@spaces.GPU(duration=30, queue=False)
+# @spaces.GPU(duration=30, queue=False)
 def model_inference(
     user_prompt,
     chat_history,
